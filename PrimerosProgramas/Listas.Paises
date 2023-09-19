@@ -1,0 +1,44 @@
+my_lista=[]
+for j in range(6):
+    nombre=input("Ingrese pais ")
+    
+    my_lista.append(nombre)
+
+
+#my_lista = ['Colombia', 'Ecuador', 'Chile', 'Argentina', 'Brasi', 'Uruguay']
+#input()
+#lista en un renglon 
+print("\n1) Lista en un solo renglón")
+print(my_lista)
+
+#lista elemeto por elemento
+print("\n2) Lista elemento por elemento")
+indice=0
+while(indice<len(my_lista)):
+    print(my_lista[indice])
+    indice=indice+1
+
+#cambiar posicion entre argentina y uruguay
+
+print("\n3) Quitar a argentina y en su misma posicion agregar a Uruguay")
+if 'Argentina' in my_lista:
+    n=my_lista.index("Argentina")
+    my_lista.remove("Argentina")
+    my_lista.insert(n,"Uruguay")
+
+
+#Adicion de tres paises más
+print("\n4) Adición de tres paises")
+
+for j in range(3):
+    nombre=input("Ingrese pais ")
+    my_lista.append(nombre)
+print(my_lista)
+
+#my_lista.extend(['Peru', 'Paraguay','Guyana'])  
+
+
+#ordenar la lista y mostrarla ordenada
+print("\n5) Ordenar lista")
+my_lista.sort()
+print(my_lista)
